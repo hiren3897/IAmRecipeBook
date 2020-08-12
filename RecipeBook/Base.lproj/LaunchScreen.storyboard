@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17147" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17120"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -11,10 +13,58 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="XG0-LV-wbg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hiren Rathod" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDi-ra-jve">
+                                <rect key="frame" x="0.0" y="833" width="414" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hiren.rathod@epita.fr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEg-hw-y3G">
+                                <rect key="frame" x="0.0" y="804" width="414" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="yas-5d-CWk">
+                                <rect key="frame" x="30" y="271" width="354" height="354"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yas-5d-CWk" secondAttribute="height" multiplier="1:1" id="ggx-ud-rHa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe Book" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzs-AE-NRK">
+                                <rect key="frame" x="0.0" y="210.5" width="414" height="50.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zDi-ra-jve" firstAttribute="top" secondItem="HEg-hw-y3G" secondAttribute="bottom" constant="8" id="4ep-8N-DtO"/>
+                            <constraint firstItem="zDi-ra-jve" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BBC-mC-7tl"/>
+                            <constraint firstItem="XG0-LV-wbg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Duk-ZW-B2r"/>
+                            <constraint firstItem="yas-5d-CWk" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="EmI-Sv-0OO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zDi-ra-jve" secondAttribute="trailing" id="Gvg-64-PPA"/>
+                            <constraint firstItem="HEg-hw-y3G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="V5G-WJ-dWU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XG0-LV-wbg" secondAttribute="trailing" id="eqF-Gs-IGL"/>
+                            <constraint firstItem="vzs-AE-NRK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fGd-Ea-ccq"/>
+                            <constraint firstItem="XG0-LV-wbg" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="fwi-Uc-alx"/>
+                            <constraint firstItem="vzs-AE-NRK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kbj-Bg-ECy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zDi-ra-jve" secondAttribute="bottom" constant="8" id="nrp-8U-6yF"/>
+                            <constraint firstItem="yas-5d-CWk" firstAttribute="top" secondItem="vzs-AE-NRK" secondAttribute="bottom" constant="10" id="s2j-Px-wgo"/>
+                            <constraint firstAttribute="bottom" secondItem="XG0-LV-wbg" secondAttribute="bottom" id="sYV-yC-s2O"/>
+                            <constraint firstItem="HEg-hw-y3G" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tPy-y4-Fk0"/>
+                            <constraint firstItem="yas-5d-CWk" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="yz1-46-TV3"/>
+                            <constraint firstItem="yas-5d-CWk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="zm3-39-MCi"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -22,4 +72,11 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="SplashLogo" width="509" height="472"/>
+        <image name="splash" width="1080" height="2160"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
